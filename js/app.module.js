@@ -5,6 +5,8 @@
     app.controller('beerSearchController', ['$scope', beerSearchController]);
     
     function beerSearchController($scope) {
-        
+        $scope.searchForBeer = function(){
+            console.log($scope.beerSearchTerms);
+        };
     }
 })();
